@@ -16,7 +16,7 @@ To address these challenges, we trained our model, **Asclepius**, on synthetic c
 On GPT-4 and expert evaluation, our model shows comparable performace to the model trained on real clinical notes.
 The model checkpoints and data are publicly available via huggingface.
 
-- [Paper](To Appear)
+- [Paper](https://arxiv.org/abs/2309.00237)
 - [Asclepius-7B](https://huggingface.co/starmpcc/Asclepius-7B)
 - [Asclepius-13B](https://huggingface.co/starmpcc/Asclepius-13B)
 - [Synthetic Clinical Notes & Instruction Dataset](https://huggingface.co/datasets/starmpcc/Asclepius-Synthetic-Clinical-Notes)
@@ -201,7 +201,14 @@ pip install pandarallel pandas jupyter numpy datasets sentencepiece openai wandb
 
 ## Citation
 ```
-Will be Updated
+@misc{kweon2023publicly,
+    title={Publicly Shareable Clinical Large Language Model Built on Synthetic Clinical Notes},
+    author={Sunjun Kweon and Junu Kim and Jiyoun Kim and Sujeong Im and Eunbyeol Cho and Seongsu Bae and Jungwoo Oh and Gyubok Lee and Jong Hak Moon and Seng Chan You and Seungjin Baek and Chang Hoon Han and Yoon Bin Jung and Yohan Jo and Edward Choi},
+    year={2023},
+    eprint={2309.00237},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
 ```
 ## Code References
 - [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca)
