@@ -1,4 +1,4 @@
-# Asclepius: Publicly Sharable Clinical Large Language Model Built on Synthetic Clinical Notes
+# Asclepius: Publicly Shareable Clinical Large Language Model Built on Synthetic Clinical Notes
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -10,7 +10,7 @@
 
 <br/>
 
-We introduce the first sharable clinical large language model, **Asclepius**.
+We introduce the first shareable clinical large language model, **Asclepius**.
 The development of large language models tailored for handling patients' clinical notes is often hindered by the limited accessibility and usability of these notes due to strict privacy regulations.
 To address these challenges, we trained our model, **Asclepius**, on synthetic clinical notes generated from publicly available case reports extracted from biomedical literature.
 On GPT-4 and expert evaluation, our model shows comparable performance to the model trained on real clinical notes.
