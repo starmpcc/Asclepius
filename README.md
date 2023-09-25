@@ -10,6 +10,14 @@
 
 <br/>
 
+## UPDATE
+We are excited to introduce the new Asclepius, based on __Llama2__! 
+You can find these models at the links below:
+- [Asclepius-Llama2-7B](https://huggingface.co/starmpcc/Asclepius-Llama2-7B)
+- [Asclepius-Llama2-13B](https://huggingface.co/starmpcc/Asclepius-Llama2-13B)
+
+----
+
 We introduce the first shareable clinical large language model, **Asclepius**.
 The development of large language models tailored for handling patients' clinical notes is often hindered by the limited accessibility and usability of these notes due to strict privacy regulations.
 To address these challenges, we trained our model, **Asclepius**, on synthetic clinical notes generated from publicly available case reports extracted from biomedical literature.
@@ -20,9 +28,6 @@ The model checkpoints and data are publicly available via huggingface.
 - [Asclepius-7B](https://huggingface.co/starmpcc/Asclepius-7B)
 - [Asclepius-13B](https://huggingface.co/starmpcc/Asclepius-13B)
 - [Synthetic Clinical Notes & Instruction Dataset](https://huggingface.co/datasets/starmpcc/Asclepius-Synthetic-Clinical-Notes)
-
-
-
 
 
 <p align='center'>
