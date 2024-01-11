@@ -11,6 +11,11 @@
 <br/>
 
 ## UPDATE
+### 2024.01.10
+**Asclepius-R** and the MIMIC-III note instruction are now available on [Physionet](https://physionet.org/content/asclepius-r/1.0.0/)!
+
+
+### 2023.09.25
 We are excited to introduce the new Asclepius, based on __Llama2__! 
 You can find these models at the links below:
 - [Asclepius-Llama2-7B](https://huggingface.co/starmpcc/Asclepius-Llama2-7B)
@@ -68,12 +73,12 @@ print(tokenizer.decode(output[0]))
 
 ## Data
 Our synthetic discharge summaries, and corresponding instruction-answer pairs are available on [huggingface](https://huggingface.co/datasets/starmpcc/Asclepius-Synthetic-Clinical-Notes).
-Due to the license issue of [MIMIC-III](https://mimic.mit.edu) dataset, instruction-answer pairs used for Asclepius-R will be available via physionet.
+Due to the license issue of [MIMIC-III](https://mimic.mit.edu) dataset, instruction-answer pairs used for Asclepius-R is available on [Physionet](https://physionet.org/content/asclepius-r/1.0.0/).
 
 
 ## Reproducing Guide
 Our models, Asclepius-7B and Asclepius-13B is available on huggingface ([7B](https://huggingface.co/starmpcc/Asclepius-7B), [13B](https://huggingface.co/starmpcc/Asclepius-13B)).
-Asclepius-R will be available via physionet.
+Asclepius-R-7B and Asclepius-R-13B are available on [Physionet](https://physionet.org/content/asclepius-r/1.0.0/)
 
 <details>
 <summary>Environment Setup</summary>
