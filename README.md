@@ -11,8 +11,11 @@
 <br/>
 
 ## UPDATE
+### 2024.03.26
+The pretrained-only versions of Asclepius and Asclepius-R (before instruction tuning) were uploaded to [Physionet](https://physionet.org/content/asclepius-r/1.1.0/) and [Huggingface](https://huggingface.co/starmpcc/)!
+
 ### 2024.01.10
-**Asclepius-R** and the MIMIC-III note instruction are now available on [Physionet](https://physionet.org/content/asclepius-r/1.0.0/)!
+**Asclepius-R** and the MIMIC-III note instruction are now available on [Physionet](https://physionet.org/content/asclepius-r/1.1.0/)!
 
 
 ### 2023.09.25
@@ -73,12 +76,12 @@ print(tokenizer.decode(output[0]))
 
 ## Data
 Our synthetic discharge summaries, and corresponding instruction-answer pairs are available on [huggingface](https://huggingface.co/datasets/starmpcc/Asclepius-Synthetic-Clinical-Notes).
-Due to the license issue of [MIMIC-III](https://mimic.mit.edu) dataset, instruction-answer pairs used for Asclepius-R is available on [Physionet](https://physionet.org/content/asclepius-r/1.0.0/).
+Due to the license issue of [MIMIC-III](https://mimic.mit.edu) dataset, instruction-answer pairs used for Asclepius-R is available on [Physionet](https://physionet.org/content/asclepius-r/1.1.0/).
 
 
 ## Reproducing Guide
 Our models, Asclepius-7B and Asclepius-13B is available on huggingface ([7B](https://huggingface.co/starmpcc/Asclepius-7B), [13B](https://huggingface.co/starmpcc/Asclepius-13B)).
-Asclepius-R-7B and Asclepius-R-13B are available on [Physionet](https://physionet.org/content/asclepius-r/1.0.0/)
+Asclepius-R-7B and Asclepius-R-13B are available on [Physionet](https://physionet.org/content/asclepius-r/1.1.0/)
 
 <details>
 <summary>Environment Setup</summary>
@@ -224,4 +227,4 @@ pip install pandarallel pandas jupyter numpy datasets sentencepiece openai wandb
 - [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca)
 - [Minimal-LLaMA](https://github.com/zphang/minimal-llama)
 - [Vicuna](https://github.com/lm-sys/FastChat)
-- [Clinical-T5](https://www.physionet.org/content/clinical-t5/1.0.0/)
+- [Clinical-T5](https://www.physionet.org/content/clinical-t5/1.1.0/)
