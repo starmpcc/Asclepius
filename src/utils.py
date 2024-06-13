@@ -8,17 +8,11 @@ from transformers import Trainer
 def modify_special_tokens(tokenizer):
     tokenizer.add_special_tokens(
         {
-            "pad_token": "<s>",
-            "eos_token": "</s>",
-            "bos_token": "<s>",
-            "unk_token": "<unk>",
+            "pad_token": tokenizer.bos_token,
         }
     )
 
-    tokenizer.eos_token_id = 2
-    tokenizer.bos_token_id = 1
-    tokenizer.unk_token_id = 0
-    tokenizer.pad_token_id = 1
+    tokenizer.pad_token_id = tokenizer.bos_token_id
 
     return tokenizer
 

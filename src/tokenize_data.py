@@ -30,7 +30,7 @@ def main():
     tokenizer = AutoTokenizer.from_pretrained(
         args.model_name, revision=revision, use_fast=False
     )
-    tokenizer = modify_special_tokens(tokenizer)
+    # tokenizer = modify_special_tokens(tokenizer)
     df = pd.read_csv(args.input_path)
 
     all_tokenized = []

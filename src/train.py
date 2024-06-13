@@ -24,11 +24,6 @@ from datasets import load_from_disk
 
 from utils import *
 
-if "A100" in torch.cuda.get_device_name():
-    from llama_flash_attn_monkey_patch import replace_llama_attn_with_flash_attn
-
-    replace_llama_attn_with_flash_attn()
-
 
 @dataclass
 class Collator(object):

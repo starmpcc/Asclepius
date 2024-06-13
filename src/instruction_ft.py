@@ -28,27 +28,9 @@ from torch.utils.data import Dataset
 
 from utils import *
 
-if "A100" in torch.cuda.get_device_name():
-    from llama_flash_attn_monkey_patch import replace_llama_attn_with_flash_attn
-
-    replace_llama_attn_with_flash_attn()
-
-
 IGNORE_INDEX = -100
 
-PROMPT = """You are an intelligent clinical languge model.
-Below is a snippet of patient's discharge summary and a following instruction from healthcare professional.
-Write a response that appropriately completes the instruction.
-The response should provide the accurate answer to the instruction, while being concise.
-
-[Discharge Summary Begin]
-{note}
-[Discharge Summary End]
-
-[Instruction Begin]
-{question}
-[Instruction End]
-"""
+PROMPT = get_prompt("ours")
 
 
 def jload(f, mode="r"):
@@ -186,8 +168,12 @@ def train():
     )
 
     tokenizer = transformers.AutoTokenizer.from_pretrained(
-        "decapoda-research/llama-7b-hf",
-        revision="pr/7",
+        model_args.model_name_or_path,
+        revision=(
+            "pr/7"
+            if "decapoda-research/llama" in model_args.model_name_or_path
+            else "main"
+        ),
         model_max_length=training_args.model_max_length,
         padding_side="right",
         use_fast=False,
