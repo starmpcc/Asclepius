@@ -11,6 +11,12 @@
 <br/>
 
 ## UPDATE
+
+### 2024.06.14
+Our paper was accepted for the findings of ACL 2024!
+
+Also, we release the enhanced versions of Asclepius: [Asclepius-Llama3-8B](https://huggingface.co/starmpcc/Asclepius-Llama3-8B) and [Asclepius-Mistral-7B-v0.3](https://huggingface.co/starmpcc/Asclepius-Mistral-7B-v0.3).
+
 ### 2024.03.26
 The pretrained-only versions of Asclepius and Asclepius-R (before instruction tuning) were uploaded to [Physionet](https://physionet.org/content/asclepius-r/1.1.0/) and [Huggingface](https://huggingface.co/starmpcc/)!
 
