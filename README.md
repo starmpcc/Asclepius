@@ -13,7 +13,7 @@
 ## UPDATE
 
 ### 2024.06.14
-Our paper was accepted for the findings of ACL 2024!
+Our paper was accepted for the findings of [ACL 2024](https://aclanthology.org/2024.findings-acl.305/)!
 
 Also, we release the enhanced versions of Asclepius: [Asclepius-Llama3-8B](https://huggingface.co/starmpcc/Asclepius-Llama3-8B) and [Asclepius-Mistral-7B-v0.3](https://huggingface.co/starmpcc/Asclepius-Mistral-7B-v0.3).
 
@@ -220,14 +220,36 @@ pip install pandarallel pandas jupyter numpy datasets sentencepiece openai wandb
 
 ## Citation
 ```
-@misc{kweon2023publicly,
-    title={Publicly Shareable Clinical Large Language Model Built on Synthetic Clinical Notes},
-    author={Sunjun Kweon and Junu Kim and Jiyoun Kim and Sujeong Im and Eunbyeol Cho and Seongsu Bae and Jungwoo Oh and Gyubok Lee and Jong Hak Moon and Seng Chan You and Seungjin Baek and Chang Hoon Han and Yoon Bin Jung and Yohan Jo and Edward Choi},
-    year={2023},
-    eprint={2309.00237},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL}
+@inproceedings{kweon-etal-2024-publicly,
+    title = "Publicly Shareable Clinical Large Language Model Built on Synthetic Clinical Notes",
+    author = "Kweon, Sunjun  and
+      Kim, Junu  and
+      Kim, Jiyoun  and
+      Im, Sujeong  and
+      Cho, Eunbyeol  and
+      Bae, Seongsu  and
+      Oh, Jungwoo  and
+      Lee, Gyubok  and
+      Moon, Jong Hak  and
+      You, Seng Chan  and
+      Baek, Seungjin  and
+      Han, Chang Hoon  and
+      Jung, Yoon Bin  and
+      Jo, Yohan  and
+      Choi, Edward",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Findings of the Association for Computational Linguistics ACL 2024",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand and virtual meeting",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-acl.305",
+    pages = "5148--5168",
+    abstract = "The development of large language models tailored for handling patients{'} clinical notes is often hindered by the limited accessibility and usability of these notes due to strict privacy regulations.To address these challenges, we first create synthetic large-scale clinical notes using publicly available case reports extracted from biomedical literature.We then use these synthetic notes to train our specialized clinical large language model, Asclepius.While Asclepius is trained on synthetic data, we assess its potential performance in real-world applications by evaluating it using real clinical notes.We benchmark Asclepius against several other large language models, including GPT-3.5-turbo and other open-source alternatives. To further validate our approach using synthetic notes, we also compare Asclepius with its variants trained on real clinical notes. Our findings convincingly demonstrate that synthetic clinical notes can serve as viable substitutes for real ones when constructing high-performing clinical language models. This conclusion is supported by detailed evaluations conducted by both GPT-4 and medical professionals. All resources{---}including weights, codes, and data{---}used in the development of Asclepius will be made publicly accessible for future research.",
 }
+
 ```
 ## Code References
 - [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca)
